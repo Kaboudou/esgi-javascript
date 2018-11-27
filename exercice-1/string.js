@@ -33,7 +33,7 @@ function capitalize(str) {
         console.log(hello);
 
     }
-    function 
+
 
 
 ucfirst("hello world ");
