@@ -57,17 +57,17 @@ function capitalize(str) {
     }
     function prop_access(path, object1){
         if(path !== null){
-            if (typeof object1 == "string"){
-                console.log("dog");
-                return "dog";
-            }
             if (typeof object1 == "object"){
-                console.log("cat");
+                console.log(object1);
                 return object1;
             }
             if (typeof object1 == "array"){
-                console.log("cat");
+                console.log(object1);
                 return object1;
+            }
+            if (typeof object1 == "string"){
+                console.log("dog");
+                return "dog";
             }
         }
 
@@ -77,4 +77,5 @@ function capitalize(str) {
 ucfirst("hello world");
 capitalize("toggleCase is the coolest");
 camelCase("toggleCase is the coolest");
-prop_access("chemin",23);
+var toto = {name : "toto"};
+prop_access("chemin",toto);
