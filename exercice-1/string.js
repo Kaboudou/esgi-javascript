@@ -2,8 +2,9 @@
 
 function ucfirst(str) {
     if( typeof str == "string") {
-    var hello = str;
-    return hello.toUpperCase().charAt(0) + hello.substr(1, hello.length);
+        var hello = str;
+        return hello.toUpperCase().charAt(0) + hello.substr(1, hello.length);
+    }
     else{
             hello = "";
             return hello;
