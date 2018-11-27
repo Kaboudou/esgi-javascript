@@ -55,7 +55,7 @@ function capitalize(str) {
             return hello;
         }
     }
-    function prop_access(path, object1){
+    function prop_access(object1, path){
         if(path !== null){
             if (typeof object1 == "object"){
                 console.log(object1);
