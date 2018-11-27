@@ -67,7 +67,7 @@ function capitalize(str) {
             }
             if (typeof object1 == "string"){
                 console.log("dog");
-                return "dog";
+                return object1;
             }
         }
 
@@ -77,5 +77,5 @@ function capitalize(str) {
 ucfirst("hello world");
 capitalize("toggleCase is the coolest");
 camelCase("toggleCase is the coolest");
-var toto = {name : "toto"};
+var toto = {"animal":{"type":{"name":"dog"}}};
 prop_access("chemin",toto);
