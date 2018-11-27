@@ -33,9 +33,11 @@ function capitalize(str) {
         console.log(hello);
 
     }
+    function prop_access(){
+
+    }
 
 
-
-ucfirst("hello world ");
+ucfirst("hello world");
 capitalize("hello world bin");
 camelCase("hello world deux");
