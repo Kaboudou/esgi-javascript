@@ -3,11 +3,14 @@
 function ucfirst(str) {
     if( typeof str == "string") {
         var hello = str;
+        console.log(hello.toUpperCase().charAt(0) + hello.substr(1, hello.length));
         return hello.toUpperCase().charAt(0) + hello.substr(1, hello.length);
+
     }
     else{
             hello = "";
             return hello;
+            console.log()
         }
     //console.log(hello.toUpperCase().charAt(0) + hello.substr(1, hello.length));
 }
@@ -17,7 +20,7 @@ function capitalize(str) {
     var tab = hello.split(" ");
     //var first = hello.toUpperCase().charAt(0) + hello.substr(1,space);
     for(var i in tab){
-        tab[i]=tab[i].substr(0,1).toUpperCase()+tab[i].substr(1, tab[i].length);
+        tab[i]=tab[i].substr(0,1).toUpperCase()+tab[i].substr(1, tab[i].length).toLowerCase();
     }
     hello = tab.join(" ");
     console.log(hello);
@@ -39,12 +42,13 @@ function capitalize(str) {
         if( typeof str == "string") {
             var hello = str;
             var tab = hello.split(" ");
-            var space = hello.search(" ");
             for (var i in tab) {
-                tab[i] = tab[i].substr(0, 1).toUpperCase() + tab[i].substr(1, tab[i].length);
+                tab[i] = tab[i].substr(0, 1).toUpperCase() + tab[i].substr(1, tab[i].length).toLowerCase();
             }
             hello = tab.join("");
+            console.log(hello);
             return hello;
+
         }
         else{
             hello = "";
@@ -57,5 +61,5 @@ function capitalize(str) {
 
 
 ucfirst("hello world");
-capitalize("hello world bin");
-camelCase("hello world deux");
+capitalize("toggleCase is the coolest");
+camelCase("toggleCase is the coolest");
