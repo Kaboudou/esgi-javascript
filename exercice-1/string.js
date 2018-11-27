@@ -61,7 +61,11 @@ function capitalize(str) {
                 console.log("dog");
                 return "dog";
             }
-            if (typeof object1 == "number"){
+            if (typeof object1 == "object"){
+                console.log("cat");
+                return "dog";
+            }
+            if (typeof object1 == "array"){
                 console.log("cat");
                 return "cat";
             }
